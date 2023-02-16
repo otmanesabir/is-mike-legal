@@ -26,16 +26,13 @@ export class AppComponent implements OnInit {
           name: 'UAE',
           status: 'Legal'
       }];
+    countryList: string[] = this.countries.map(country => country.name);
 
 
-  ngOnInit(): void {
+    ngOnInit(): void {
       this.form = new FormControl(null, [
           Validators.required,
       ]);
-  }
-
-  get countryList(): string[] {
-      return this.countries.map(country => country.name);
   }
 
   get legalStatus(): string {
@@ -71,7 +68,7 @@ export class AppComponent implements OnInit {
               timestamp
           },
           {
-              title: 'Mike departed his flight from Dubai and is on his way to Munich.',
+              title: 'Mike departed from Dubai and is on his way to Munich.',
               timestamp
           },
       ]
