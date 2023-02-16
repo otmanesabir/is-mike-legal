@@ -58,18 +58,69 @@ export class AppComponent implements OnInit {
     }
 
   get eventLogs(): LogEventInterface[] {
-      const timestamp = new Date();
       return [{
-          title: 'Mike enters Germany, and is considered legal.',
-          timestamp
+          title: 'Enters Germany, and is considered legal.',
+          timestamp: new Date('02/16/2023')
       },
           {
-              title: 'Mike is stopped by border control because of an old police case.',
-              timestamp
+              title: 'Stopped by border control because of an old police case.',
+              timestamp: new Date('02/16/2023')
           },
           {
-              title: 'Mike departed from Dubai and is on his way to Munich.',
-              timestamp
+              title: 'Departed from Dubai and is on his way to Munich.',
+              timestamp: new Date('02/16/2023')
+          },
+          {
+              title: 'Flight replacement found.',
+              timestamp: new Date('02/16/2023')
+          },
+          {
+              title: 'Goes to the airport without a replacement.',
+              timestamp: new Date('02/16/2023')
+          },
+          {
+              title: 'Looking for a flight replacement.',
+              timestamp: new Date('02/15/2023')
+          },
+          {
+              title: 'Mikes flight gets canceled.',
+              timestamp: new Date('02/15/2023')
+          },
+          {
+              title: 'Driven back by a random Russian guy to Dubai.',
+              timestamp: new Date('02/04/2023')
+          },
+          {
+              title: 'Denied access to Oman. Left standing in the middle of nowhere.',
+              timestamp: new Date('02/04/2023')
+          },
+          {
+              title: 'Leaves for a road trip to Oman.',
+              timestamp: new Date('02/04/2023')
+          },
+          {
+              title: 'Receives an email about registration issues in Germany.',
+              timestamp: new Date('01/27/2023')
+          },
+          {
+              title: 'Flew back to Dubai, UAE.',
+              timestamp: new Date('01/20/2023')
+          },
+          {
+              title: 'Released after 6 hours in airport prison.',
+              timestamp: new Date('01/14/2023')
+          },
+          {
+              title: 'Detained until a replacement flight is found.',
+              timestamp: new Date('01/14/2023')
+          },
+          {
+              title: 'Denied entry toto Caru, Egypt.',
+              timestamp: new Date('01/14/2023')
+          },
+          {
+              title: 'Leaves for trip to Caru, Egypt.',
+              timestamp: new Date('01/14/2023')
           },
       ]
   }
