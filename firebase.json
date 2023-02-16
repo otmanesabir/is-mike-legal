@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "dist/fe",
+        "public": "dist/is-mike-legal",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
 }
