@@ -1,11 +1,23 @@
+$screen-lg-min: 992px;
+
 :host {
+  @mixin mobile {
+    @media (min-width: #{$screen-lg-min}) {
+      @content;
+    }
+  }
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 200;
   display: flex;
-  gap: 72px;
+  gap: 0;
 
+  @include mobile {
+    gap: 72px;
+  }
   .timestamp {
-    width: 80px;
+    width: 100px;
+
+
   }
 }
