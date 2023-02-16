@@ -1,7 +1,7 @@
-<p>Event log</p>
+<div>Event log</div>
 
-<div *ngFor="let event of logEvents">
-    <app-history-log-line [logEvent]="event">
+<span>
+    <app-history-log-line *ngFor="let event of logEvents" [logEvent]="event">
 
     </app-history-log-line>
-</div>
+</span>
