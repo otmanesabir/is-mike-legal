@@ -60,7 +60,8 @@ export class AppComponent implements OnInit {
   get eventLogs(): LogEventInterface[] {
       return [{
           title: 'Enters Germany, and is considered legal.',
-          timestamp: new Date('02/16/2023')
+          timestamp: new Date('02/16/2023'),
+          emoji: '🚨'
       },
           {
               title: 'Stopped by border control because of an old police case.',
@@ -116,11 +117,11 @@ export class AppComponent implements OnInit {
           },
           {
               title: 'Denied entry toto Caru, Egypt.',
-              timestamp: new Date('01/14/2023')
+              timestamp: new Date('01/14/2023'),
           },
           {
               title: 'Leaves for trip to Caru, Egypt.',
-              timestamp: new Date('01/14/2023')
+              timestamp: new Date('01/14/2023'),
           },
       ]
   }
