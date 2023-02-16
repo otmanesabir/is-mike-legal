@@ -1,0 +1,40 @@
+:host {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  font-family: 'Roboto', sans-serif;
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .headline {
+
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+    .subheader {
+      font-weight: 200;
+      font-size: 16px;
+    }
+  }
+
+  .legal-status {
+    font-weight: 400;
+    font-size: 20px;
+    color: red;
+  }
+
+  .is-legal {
+    color: green;
+  }
+
+  .country-selection {
+    width: 200px;
+  }
+}
