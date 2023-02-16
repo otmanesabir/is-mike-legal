@@ -19,7 +19,6 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          cache-dependency-path: "./package-lock.json"
 
       - name: Build Application
         run: |
